@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment | Puadh Club Marathon 2026</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<nav class="navbar">
+<a href="index.html" class="brand"><img src="puadh_logo.jpeg" alt="Puadh Club Logo" class="club-logo"><div class="brand-text"><span class="presented">PRESENTED BY</span><span class="club-name">PUADH CLUB</span></div></a>
+</nav>
+</header>
+
+
+<main>
+<section class="registration-header">
+<p class="eyebrow">REGISTRATION</p>
+<h1>Payment</h1>
+<p>Complete your payment to confirm your marathon registration.</p>
+</section>
+
+<section class="registration-section">
+<div class="form-section">
+<h2>Registration Details</h2>
+<div id="registrationDetails"><p>Loading registration details...</p></div>
+
+<hr class="payment-divider">
+
+<div class="payment-box">
+<p class="payment-label">Registration Fee</p>
+<h2 id="paymentAmount">₹—</h2>
+
+<div id="paymentArea">
+<p class="payment-instruction">Scan with any UPI app. The amount is already filled in.</p>
+
+<div id="qrcode" class="qr-box">Generating QR...</div>
+
+<p class="payment-note">On a phone? Tap the button to open your UPI app.<br>UPI ID: <strong id="upiIdText"></strong></p>
+
+<a id="upiLink" href="#" class="primary-button upi-button">Pay with UPI app</a>
+
+<p class="payment-note">After paying, enter the 12-digit UTR / transaction ID below.</p>
+
+<div class="form-group">
+<label for="utr">UPI Transaction ID / UTR <span>*</span></label>
+<input type="text" id="utr" inputmode="numeric" maxlength="12" placeholder="12-digit transaction ID">
+</div>
+
+<button type="button" class="form-submit" id="paymentButton">Submit Payment Details →</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<p>© 2026 Puadh Club. All rights reserved.</p>
+<p>Marathon 2026</p>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

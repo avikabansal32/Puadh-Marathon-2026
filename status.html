@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Check Registration | Puadh Club Marathon</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<nav class="navbar">
+<a href="index.html" class="brand"><img src="puadh_logo.jpeg" alt="Puadh Club Logo" class="club-logo"><div class="brand-text"><span class="presented">PRESENTED BY</span><span class="club-name">PUADH CLUB</span></div></a>
+</nav>
+</header>
+
+
+<main>
+<section class="registration-header">
+<p class="eyebrow">MARATHON 2026</p>
+<h1>Check Your Status</h1>
+<p>Find out whether your payment has been verified.</p>
+</section>
+
+<section class="registration-section">
+<div class="form-section">
+<h2>Registration Details</h2>
+<p class="section-description">Enter the registration ID and email you used to register.</p>
+
+<form id="statusForm">
+<div class="form-group">
+<label for="statusRegistrationId">Registration ID</label>
+<input id="statusRegistrationId" type="text" required placeholder="PUADH26-XXXXXXXX">
+</div>
+<div class="form-group">
+<label for="statusEmail">Registered Email</label>
+<input id="statusEmail" type="email" required placeholder="you@example.com">
+</div>
+<button class="form-submit" type="submit" id="statusButton">Check Status →</button>
+</form>
+
+<div id="statusResult" role="status" aria-live="polite" hidden>
+<h2 id="statusHeading"></h2>
+<p id="statusMessage"></p>
+<p id="statusReference"></p>
+</div>
+
+<p class="confirmation-note">If your payment is still being verified, please allow the organizers time to check it before contacting the club.</p>
+</div>
+</section>
+</main>
+
+<footer>
+<p>© 2026 Puadh Club. All rights reserved.</p>
+<p>Marathon 2026</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

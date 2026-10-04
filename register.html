@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Register for Puadh Club Marathon 2026.">
+<title>Register | Puadh Club Marathon 2026</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<nav class="navbar">
+<a href="index.html" class="brand"><img src="puadh_logo.jpeg" alt="Puadh Club Logo" class="club-logo"><div class="brand-text"><span class="presented">PRESENTED BY</span><span class="club-name">PUADH CLUB</span></div></a>
+<a href="index.html" class="nav-button">Home</a>
+</nav>
+</header>
+
+
+<main>
+<section class="registration-header">
+<p class="eyebrow">PUADH CLUB MARATHON 2026</p>
+<h1>Registration</h1>
+<p>Register for the Puadh Club Marathon.</p>
+<p><strong>Date:</strong> 13 December 2026</p>
+<p><strong>Venue:</strong> Sector 89 to Railway Under Bridge, Sector 84</p>
+</section>
+
+<section class="registration-section">
+<form id="registrationForm" class="registration-form">
+
+<div class="form-section">
+<h2>Personal Details</h2>
+<p class="section-description">Enter the participant's information.</p>
+
+<div class="form-group">
+<label for="fullName">Full Name <span>*</span></label>
+<input type="text" id="fullName" name="fullName" placeholder="Enter full name" autocomplete="name" required>
+</div>
+
+<div class="form-group">
+<label for="email">Email Address <span>*</span></label>
+<input type="email" id="email" name="email" placeholder="example@email.com" autocomplete="email" required>
+</div>
+
+<div class="form-group">
+<label for="phone">Mobile Number <span>*</span></label>
+<input type="tel" id="phone" name="phone" placeholder="10-digit mobile number" inputmode="numeric" pattern="[0-9]{10}" maxlength="10" autocomplete="tel" required>
+</div>
+
+<div class="form-row">
+<div class="form-group">
+<label for="dob">Date of Birth <span>*</span></label>
+<input type="date" id="dob" name="dob" min="1920-01-01" max="2026-12-13" required>
+</div>
+<div class="form-group">
+<label for="gender">Gender <span>*</span></label>
+<select id="gender" name="gender" required>
+<option value="">Select gender</option>
+<option value="Male">Male</option>
+<option value="Female">Female</option>
+</select>
+</div>
+</div>
+
+<div class="form-group">
+<label>Age Category</label>
+<p id="ageCategoryDisplay">Enter your date of birth to determine your age category.</p>
+</div>
+</div>
+
+<div class="form-section">
+<h2>Event Details</h2>
+<p class="section-description">Your available races are determined by your date of birth.</p>
+
+<div class="form-group">
+<label for="event">Event / Race <span>*</span></label>
+<select id="event" name="event" required>
+<option value="">Enter date of birth first</option>
+</select>
+</div>
+
+<p id="eventFee">Select your date of birth to see your race and fee.</p>
+
+<div class="form-group">
+<label for="tshirt">T-Shirt Size</label>
+<select id="tshirt" name="tshirt">
+<option value="">Select size</option>
+<option value="36">24</option>
+<option value="38">26</option>
+<option value="40">28</option>
+<option value="42">30</option>
+<option value="44">32</option>
+<option value="44">34</option>
+<option value="36">36</option>
+<option value="38">38</option>
+<option value="40">40</option>
+<option value="42">42</option>
+<option value="44">44</option>
+</select>
+</div>
+</div>
+
+<div class="form-section">
+<h2>Emergency Contact</h2>
+<p class="section-description">Someone we can contact in case of an emergency.</p>
+
+<div class="form-group">
+<label for="emergencyName">Emergency Contact Name <span>*</span></label>
+<input type="text" id="emergencyName" name="emergencyName" placeholder="Full name" required>
+</div>
+
+<div class="form-group">
+<label for="emergencyPhone">Emergency Contact Number <span>*</span></label>
+<input type="tel" id="emergencyPhone" name="emergencyPhone" placeholder="10-digit mobile number" inputmode="numeric" pattern="[0-9]{10}" maxlength="10" required>
+</div>
+</div>
+
+<div class="form-section">
+<h2>Confirmation</h2>
+<label class="checkbox-container">
+<input type="checkbox" id="terms" name="terms" required>
+<span>I confirm that the information provided above is correct and I agree to follow the rules and guidelines of the event.</span>
+</label>
+</div>
+
+<button type="submit" class="form-submit">Continue to Payment →</button>
+<p class="required-note">* Required fields</p>
+</form>
+</section>
+</main>
+
+<footer>
+<p>© 2026 Puadh Club. All rights reserved.</p>
+<p>Marathon 2026</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
