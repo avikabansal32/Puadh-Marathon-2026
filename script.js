@@ -13,7 +13,7 @@ const PAYEE_NAME = "Puadh Club";
 const RACE_DATE = Date.UTC(2026, 11, 13); // 13 December 2026
 
 const RACES = {
-  "3K Fun Race":    { fee: 300 },
+  "3K Fun Race":    { fee: 200 },
   "5K Fun Race":    { fee: 300 },
   "10K Adult Race": { fee: 500 }
 };
@@ -88,11 +88,11 @@ if (registrationForm) {
       `${getCategory(age)} category (age ${age} on race day)`;
 
     if (age <= 17) {
-      eventSelect.add(new Option("3K Fun Race — ₹300", "3K Fun Race"));
+      eventSelect.add(new Option("3K Fun Race — ₹200", "3K Fun Race"));
       eventSelect.value = "3K Fun Race";
     } else {
       eventSelect.add(new Option("Select your race", ""));
-      eventSelect.add(new Option("5K Fun Race — ₹500", "5K Fun Race"));
+      eventSelect.add(new Option("5K Fun Race — ₹300", "5K Fun Race"));
       eventSelect.add(new Option("10K Adult Race — ₹500", "10K Adult Race"));
     }
     showFee();
