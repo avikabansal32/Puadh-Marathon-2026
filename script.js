@@ -14,7 +14,7 @@ const RACE_DATE = Date.UTC(2026, 11, 13); // 13 December 2026
 
 const RACES = {
   "3K Fun Race":    { fee: 300 },
-  "5K Fun Race":    { fee: 500 },
+  "5K Fun Race":    { fee: 300 },
   "10K Adult Race": { fee: 500 }
 };
 
